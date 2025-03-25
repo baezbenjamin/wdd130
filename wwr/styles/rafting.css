@@ -51,7 +51,7 @@ header, main, footer {
     transform: translateX(-50%);
     background-color: #ffffff61;
     padding: 1rem;
-    font-family: 3em;
+    font-size: 3em;
 }
 
 .hero article {
