@@ -1,0 +1,94 @@
+:root {
+    --primary-color: #3F9ECA;
+    --secondary-color: #C60000;
+    --accent1-color: #96D1EC;
+    --accent2-color: #D14339;
+
+    --heading-font: 'Merriweather Sans', sans-serif;
+    --paragraph-font: 'Noto Sans', sans-serif;
+}
+
+body {
+    font-family: var(--paragraph-font);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+}
+
+main {
+    max-width: 840px;
+}
+
+h1{
+    font-family: "Merriweather Sans";
+    color: var(--primary-color);
+    position: absolute;
+}
+
+a {
+    text-decoration: none;
+}
+
+header, main, footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img{
+    width: 100%;
+}
+
+.hero h1 {
+    color: var(--secondary-color);
+    position: absolute;
+    top: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff61;
+    padding: 1rem;
+    font-family: 3em;
+}
+
+.hero article {
+    background-color: #ffffff61;
+    position: absolute;
+    top: 15rem;
+    left: 2rem;
+    right: 2rem;
+}
+
+.hero article img {
+    float: right;
+    margin: 2rem;
+    width: 13rem;
+}
+
+.hero article p {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-weight: 500;
+}
+
+footer {
+    background-color: #3e3e3e;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 2rem;
+}
+
+.social{
+    grid-column: 3;
+    justify-self: end;
+}
+
+.social img {
+    width: 3em;
+    grid-column: 3;
+}
