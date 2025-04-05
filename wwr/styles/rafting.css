@@ -1,6 +1,6 @@
 :root {
     --primary-color: #3F9ECA;
-    --secondary-color: #C60000;
+    --secondary-color:#1a5e63;
     --accent1-color: #96D1EC;
     --accent2-color: #D14339;
 
@@ -10,6 +10,32 @@
 
 body {
     font-family: var(--paragraph-font);
+    background: var(--accent1-color);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 200px auto;
+    align-items: center;
+    background-color: var(--primary-color);
+
+}
+
+.logo {
+    margin: 1em;
+    width: 150px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    padding: 1em;
+    color: #fff;
+    font-family: var(--heading-font);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -49,13 +75,14 @@ header, main, footer {
     top: 1em;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #ffffff61;
+    background-color: #ffffff99;
     padding: 1rem;
     font-size: 3em;
+    text-align: center;
 }
 
 .hero article {
-    background-color: #ffffff61;
+    background-color: #ffffff99;
     position: absolute;
     top: 15rem;
     left: 2rem;
@@ -75,8 +102,69 @@ header, main, footer {
     font-weight: 500;
 }
 
+section {
+    display: grid;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr 20% 1fr;
+    grid-template-rows: 30% 1fr;
+    gap: 20px;
+    justify-content: center;
+}
+
+.history h2 {
+    color: var(--secondary-color);
+    grid-column: 1 / 4;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.history p {
+    font-size: smaller;
+}
+
+.history img {
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+}
+
+.adventures {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20%;
+}
+
+.adventures h2 {
+    color: var(--secondary-color);
+    grid-column: 1 / span 5;
+    grid-row: 1;
+    justify-self: center;
+}
+
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 20px;
+    margin-inline-end: 20px;
+    unicode-bidi: isolate;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.adventures img {
+    width: 100%;
+    gap: 1em 1em;
+}
+
 footer {
-    background-color: #3e3e3e;
+    background-color: var(--primary-color);
     color: #fff;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
