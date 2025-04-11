@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 :root {
     --primary-color: #2a7ca2;
     --secondary-color:#1a5e63;
@@ -42,14 +46,9 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
 }
 
-main {
-    max-width: 840px;
-}
-
 h1{
     font-family: "Merriweather Sans";
     color: var(--primary-color);
-    position: absolute;
 }
 
 a {
@@ -135,16 +134,14 @@ section {
 .contactus {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 5% 2% 1fr 1fr 1fr 1fr;
-    justify-content: space-around;
-    box-sizing: border-box;
-    
 }
 
 .contactus h1 {
-    grid-column: 1/-1;
+    grid-column: 1/12;
     grid-row: 1;
-    justify-self: center;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
 }
 
 .contactform {
@@ -191,7 +188,7 @@ button {
 .employees {
     display: flex;
     justify-content: center;
-    margin: 10px;
+    margin: 50px;
     grid-column: 1/12;
     grid-row: 4/4;
 }
