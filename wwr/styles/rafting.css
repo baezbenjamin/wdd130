@@ -132,6 +132,75 @@ section {
     width: 100%;
 }
 
+.contactus {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 5% 2% 1fr 1fr 1fr 1fr;
+    justify-content: space-around;
+    box-sizing: border-box;
+    
+}
+
+.contactus h1 {
+    grid-column: 1/-1;
+    grid-row: 1;
+    justify-self: center;
+}
+
+.contactform {
+    grid-column: 1/5;
+    grid-row: 2/4;
+    padding: 1rem;
+    background-color: #eee;
+    font-family: var(--paragraph-font);
+    align-items: center;
+}
+
+button {
+    margin: 1rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+
+.address {
+    grid-column: 7/12;
+    grid-row: 2/4;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.address a {
+    color: black;
+    margin-top: 5%;
+}
+
+.gmap {
+    border-radius: 1em;
+    margin-top: 10%;
+    max-width: 600px;
+    width: 100%;
+    height: 500%;
+    max-height: 450px;
+}
+
+.employees {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    grid-column: 1/12;
+    grid-row: 4/4;
+}
+
+footer a {
+    color: white;
+    justify-self: center;
+}
+
 .adventures {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
@@ -169,6 +238,7 @@ footer {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     padding: 2rem;
+    align-items: center;
 }
 
 .social{

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conctact Us - White Water Rafting</title>
+    <meta name="description" content="Contacting information for White Water Rafting">
+    <meta name="author" content="Benjamin Baez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="logo" class="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main class="grid contactus">
+        <h1>Contact Us</h1>
+        <form action="#" class="contactform">
+            <fieldset>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="emailaddress">Email:</label>
+                <input type="email" name="email" id="emailaddress" required>
+            </fieldset>
+            <fieldset class="radio-inputs">
+                <label for="message">Reason for contacting Us:</label><br>
+                <input type="radio" id="general" name="gq" value="general">
+                <label for="general">General Question</label><br>
+                <input type="radio" id="reservation" name="res" value="reservation">
+                <label for="reservation">Reservation Question</label><br>
+                <input type="radio" id="website" name="web" value="website">
+                <label for="website">Website Suggestion</label><br>
+            </fieldset>
+            <fieldset>
+                <label for="message">Message:</label><br>
+                <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+            </fieldset>
+            <div class="signup">
+                <input type="checkbox" name="newsletter" id="newsletter">
+                <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+            </div>
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>
+        <section class="address">
+            <h2>Our Contact Info</h2>
+            <address>150 Greenwich St,<br>New York, NY 10007</address>
+            <a href="tel: +123-456-7890">(123) 123-456-78790</a><br>
+            <a href="mailto:info@whiterwater.com">info@whiterwater.com</a><br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.3489756835293!2d-74.01494182340093!3d40.71033357139381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b8c256c66a5%3A0x90d13914a18af3ff!2sDuolingo!5e0!3m2!1ses-419!2spy!4v1744259967666!5m2!1ses-419!2spy"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="gmap"></iframe>
+            <hr class="hrule">
+        </section>
+        <section class="grid employees">
+            <figure class="employee">
+                <img src="images/ceo_profile.webp" alt="CEO">
+                <figcaption>Hana Nakayama, CEO</figcaption>
+            </figure>
+            <figure class="employee">
+                <img src="images/safe_profile.webp" alt="Safe Guard">
+                <figcaption>Ken Yamaguchi, Safe Guard</figcaption>
+            </figure>
+            <figure class="employee">
+                <img src="images/guide_profile.webp" alt="River Guide">
+                <figcaption>José González, River Guide</figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;2025 🐊 White Water Rafting 🐊 Benjamin Baez</p>
+        <a href="week05/wireframes/contact-us.webp">Wireframe</a>
+        <nav class="social">
+            <a href="https://facebook.com">
+                <img src="images/facebook.webp" alt="">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.webp" alt="">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.webp" alt="">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
